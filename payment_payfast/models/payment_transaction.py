@@ -63,8 +63,7 @@ class TxPayfast(models.Model):
             'item_name': item_name,
             'return_url': '%s' % parse.urljoin(base_url, PayfastController.return_url),
             'cancel_url': '%s' % parse.urljoin(base_url, PayfastController.cancel_url),
-            # 'notify_url': '%s' % parse.urljoin(base_url, PayfastController.notify_url),
-            'notify_url': 'https://d8ca-119-155-13-186.in.ngrok.io',
+            'notify_url': '%s' % parse.urljoin(base_url, PayfastController.notify_url),
             'custom_str1': reference,
             'api_url': self.provider_id.payfast_get_form_action_url(),
         })
